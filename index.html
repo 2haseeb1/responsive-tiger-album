@@ -22,11 +22,20 @@
     .photo-detail{
         position:absolute;  /* position:absolute;  added to the tiger image to adjust with the frame  8:30AM 1/19/2022*/
         width:300px; /*    width:300px;  added to the tiger image to adjust with the frame  8:32AM 1/19/2022*/
+        display:none; /*    display:none;   to make the elements unseen  8:57 AM 1/19/2022*/
         top:0; /*     top:0;   added to the tiger image to adjust with the frame  8:34AM 1/19/2022* the it moved to the top of every element*/
     }
     .photo-frame{
         position:relative; /*     position:relative;   added to the tiger image to adjust with the photo- frame to not go far moved 8:44AM 1/19/2022* the it moved to the top of every element*/
        
+    }
+  .photo-frame:hover .photo-detail{
+     display:block;
+     cursor:pointer;
+     color:white;
+     background:rgba(42, 165, 63, 0.658); /*     display:block;
+     cursor:pointer;
+     color:white; 9:19 AM 1/19/2022  added to make the image hoverable*/
     }
 </style>
 <body>
