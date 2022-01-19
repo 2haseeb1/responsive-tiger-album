@@ -29,10 +29,10 @@
     }
     .photo-frame{
         position:relative; /*     position:relative;   added to the tiger image to adjust with the photo- frame to not go far moved 8:44AM 1/19/2022* the it moved to the top of every element*/
-       
+        overflow: hidden; /*   overflow: hidden; 10:21 AM 1/19/2022 added to control the image to set upto the photo-frame*/
     }
   .photo-frame:hover .photo-detail{
-     display:block;
+      display:block;/* temporay for a while 9:58 AM 1/19/2022*/
      cursor:pointer;
      color:white;
      background:rgba(42, 165, 63, 0.658); /*     display:block;
@@ -57,6 +57,16 @@
         /*     flex-wrap:wrap;
         color:white;    9:41 AM 1/19/2022  added to make the image frame photo album set wrapped and fixed*/
     }
+ .photo-frame:hover .photo{
+    transform: scale(1.2); 
+    transition:transform 1.8s ease-in-out ;
+    } 
+    
+    /* .photo-frame:hover .photo{
+        
+        transform: scale(1.2); 
+       transition:transform 1.8s ease-in-out ;
+    } */
 </style>
 <body>
     <h1>My awesome photo album with Tiger mama</h1>
