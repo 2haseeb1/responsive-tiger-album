@@ -9,7 +9,7 @@
 <style>
     .photo-frame{
         width: 300px;
-        height: 400px;
+        height: 179px; /*   height: 179px;  added to adjust to the image size 8:52 AM 1/19/2022*/ 
         border:2px solid rgb(71, 54, 10); /* border added  8:05 AM 1/19/2022*/
         border-radius: 10px; /* border-radius added  8:06AM 1/19/2022*/
     }
@@ -18,6 +18,15 @@
         border-radius: 10px; /* border-radius added to the tiger image 8:10AM 1/19/2022*/
         border-top-right-radius: 6px; /* border-top-right-radius added to the tiger image to adjust with the frame 8:14AM 1/19/2022*/
         border-top-left-radius: 6px;  /* border-top-right-radius added to the tiger image to adjust with the frame  8:14AM 1/19/2022*/
+    }
+    .photo-detail{
+        position:absolute;  /* position:absolute;  added to the tiger image to adjust with the frame  8:30AM 1/19/2022*/
+        width:300px; /*    width:300px;  added to the tiger image to adjust with the frame  8:32AM 1/19/2022*/
+        top:0; /*     top:0;   added to the tiger image to adjust with the frame  8:34AM 1/19/2022* the it moved to the top of every element*/
+    }
+    .photo-frame{
+        position:relative; /*     position:relative;   added to the tiger image to adjust with the photo- frame to not go far moved 8:44AM 1/19/2022* the it moved to the top of every element*/
+       
     }
 </style>
 <body>
@@ -29,11 +38,14 @@
                 <div class="photo">
                     <img src="images/tiger.png" alt="">
                 </div>
+                <div class="photo-detail">
+                <h3>Tiger Mama Candid</h3>
+                <p> ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, iusto. ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, iusto.</p>
             </div>
-            <div class="photo-detail"></div>
-            <h3>Tiger Candid</h3>
-            <p> ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, iusto.</p>
-        </div>
+            </div>
+            </div>
+            
+     
     </section>
 </body>
 </html>
